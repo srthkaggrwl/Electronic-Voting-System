@@ -1,0 +1,339 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box; /* Apply the box-sizing model globally */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit; /* Ensure padding and borders are included within the element's width/height */
+}
+
+/* Prevent any elements from exceeding the viewport width */
+.container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* For images or media that could potentially overflow */
+img, video, iframe {
+    max-width: 100%;
+    height: auto; /* Keep aspect ratio for media */
+}
+
+/* Media queries for further control over mobile view if needed */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Adjust font-size for readability on smaller screens */
+    }
+
+    /* Ensure content stays within bounds */
+    .content {
+        padding: 0 15px; /* Optional padding to prevent content from touching screen edges */
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-container, .confirmation-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.icon-container img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 80vh;
+}
+
+.candidates {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.candidate {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.candidate img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.candidate h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.candidate p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.vote-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.vote-btn:hover {
+    background-color: #444;
+}
+
+@media (max-width: 768px) {
+    .candidates {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .candidate {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hiding the hamburger icon by default */
+.hamburger {
+    display: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive Nav: When the screen size is 768px or smaller */
+@media (max-width: 768px) {
+
+html, body {
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    width: 100vw;       /* Ensure the body takes up the full viewport width */
+}
+
+	header .logo h1 {
+        font-size: 1.2em; /* Automatically reduce the size of the heading */
+    	}
+
+    nav ul {
+        display: none; /* Hide the nav links by default on smaller screens */
+        flex-direction: column; /* Stack links vertically when shown */
+        position: absolute;
+        top: 60px; /* Adjust this based on header height */
+        right: 20px;
+        background-color: #000;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* Show the hamburger icon on smaller screens */
+    .hamburger {
+        display: block;
+    }
+
+    /* Display the menu when the hamburger is clicked */
+    nav ul.show {
+        display: flex;
+    }
+.candidates {
+padding-top: 400px;
+}
+}
+
+main {
+    margin-top: 80px;
+}
